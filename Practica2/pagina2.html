@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <!-- Requisito 10: Uso de favicon -->
+        <link rel="icon" href="complementos/DP.png" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contenido del Baúl</title>
+    </head>
+
+    <body>
+        <!-- Requisito 1: Uso de elementos estructurales -->
+        <header>
+            <h1 id="home">Contenido del Baúl</h1>
+        </header>
+        <!-- Requisito 8: Índice / menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="Práctica2.html">El Baúl de los Videojuegos</a></li> <!-- Requisito 7 -->
+                    <li><a href="#blog">Blog</a>
+                        <ul>
+                            <li><a href="#tabla-imagenes">Tabla Comparativa Juegos Remake - Retro</a></li>
+                            <li><a href="#eventos">Eventos,Concursos y Convenciones</a>
+                                <ul>
+                                    <li><a href="#eventos-destacados">Próximos Eventos Destacados</a></li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </li>
+                <li><a href="#suscripcion">Suscríbete</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
+
+        <section id="blog">
+            <h2>Blog</h2>
+
+            <p>En este blog analizaremos cómo las grandes compañías tales como <i>Square Enix, Nintendo, Konami, Capcom...
+                </i> están trayendo de vuelta juegos míticos en forma de remasterizaciones y remakes. Estas nuevas versiones
+                buscan respetar el espíritu original mientras se adaptan a las expectativas actuales. Un recorrido entre
+                pasado y presente para los verdaderos amantes del retro.</p>
+
+            <!-- Requisito 11: Elemento multimedia (video) -->
+            <video width="400" height="200" controls>
+                <source src="complementos/final_fantasy7.mp4" type="video/mp4">
+                <source src="complementos/final-fantasy-7.webm" type="video/webm">
+                <track kind="subtitles" src="subtitulos.vtt" label="Subtítulos en español">
+            </video>
+            <p>Como se puede observar en el video anterior, con el paso de los años el aumento de calidad en los remakes
+                respecto a sus versiones originales es bastante notable. No solo se muestran mejoras visuales, de sonido y
+                jugabilidad, sino también el aumento de nivel técnico. En definitiva los remakes se han convertido en una
+                forma de revivir grandes clásicos, adaptandolos a las técnicas modernas sin perder esas cualidades que los
+                hizo sobresalir en su día</p>
+            <br>
+            <br>
+            <hr>
+            <h3 id="tabla-imagenes">Tabla Comparativa Juegos Remake - Retros</h3>
+
+            <!-- Requisito 3: Tabla con imágenes y texto -->
+
+            <p>Aquí se puede observar una pequeña comparativa entre juegos retros y sus remakes</p>
+            <table border="1">
+                <caption>Comparativa juegos remake/retro </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre del juego</th>
+                        <th scope="col">Imagen remake</th>
+                        <th scope="col">Imagen retro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Final Fantasy VII</td>
+                        <td> <a href="https://ffvii.square-enix-games.com/en-us" target="_blank"><img
+                                    src="complementos/final_fantasy_vii.webp" alt="Fantasy_VII Remake" width="250"></a></td>
+                        <td><img src="complementos/ffVII.jpg" alt="final_fantasy_VII_original" width="250"></td>
+                    </tr>
+                    <tr>
+                        <td>Super Mario 64</td>
+                        <td><img src="complementos/mario.jpg" alt="super_Mario_64_remake" width="250"></td>
+                        <td><img src="complementos/supermario1.webp" alt="Super_Mario_64_original" width="250"></td>
+                    </tr>
+                    <tr>
+                        <td>Dragon ball </td>
+                        <td><img src="complementos/db1.jpeg" alt="Dragon_ball_Remake" width="250"></td>
+                        <td><img src="complementos/dbz.jpeg" alt="Dragon_ball_original" width="250"></td>
+                    </tr>
+                    <tr>
+                        <td>Dragon Quest</td>
+                        <td><img src="complementos/Dq1.jpg" alt="Dragon_Quest_2_Remake" width="250"></td>
+                        <td><img src="complementos/dq2.jpeg" alt="Dragon_quest_2_original" width="250"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+            <a href="#home">Volver al inicio</a> <!-- Requisito 9 -->
+        </section>
+         <hr>
+        <section id="eventos">
+            <h2>Eventos,Concursos y Convenciones</h2>
+            <p> Aquí encontrarás toda la información disponible sobre futuros eventos, concursos, convenciones y otras
+                actividades de interés. </p>
+            <h3 id="eventos-destacados">Próximos Eventos Destacados</h3>
+
+            <p>No te pierdas los eventos más importantes de la temporada</p>
+            <ul>
+                <li>
+                    <h4>Campeonato de España </h4>
+                    <p>Celebrado en <b>Barcelona</b> del 15 al 17 de marzo</p>
+                    <p>la convención más grande del año</p>
+                </li>
+                <li>
+                    <h4>Expotaku</h4>
+                    <p>Celebrado en <b>A Coruña</b> del 22 al 23 de noviembre</p>
+                    <!-- Requisito 16: Cita -->
+                    <blockquote>«Lugar donde los disfraces cobran vida.»</blockquote>
+                </li>
+            </ul>
+
+
+            <a href="#home">Volver al inicio</a>
+        </section>
+            <hr>
+        <section id="suscripcion">
+            <!-- Requisito 12: Formulario  -->
+            <h2>Suscripción</h2>
+
+            <h3>Cuéntanos un poco sobre tí</h3>
+            <form action="/procesar_preferencias_retro" method="post">
+                <fieldset>
+                    <legend>Información personal</legend>
+
+                    <label for="apodo">Apodo del Jugador</label>
+                    <input type="text" id="apodo" name="apodo" placeholder="John Snow" required>
+                    <br>
+
+                    <label for="consola">Consola Retro Favorita</label>
+                    <input type="text" id="consola" name="consola"
+                        placeholder="ej: sNES,Master System,Nintendo64,playStation.." required>
+                    <br>
+
+                    <label for="fecha">Fecha y Hora </label>
+                    <input type="datetime-local" id="fecha" name="fecha">
+                    <br>
+
+
+                </fieldset>
+                <!-- Requisito 12: Formulario  -->
+                <fieldset>
+                    <legend>Juegos Clásicos y Remakes</legend>
+
+                    <label for="estilo">Preferencia de estilo visual para Remakes</label>
+                    <select id="estilo" name="estilo" required>
+                        <option value="">Elije una opción</option>
+                        <option value="graficos">Gráficos 3D modernos</option>
+                        <option value="reimaginacion">Reimaginación grafica total</option>
+                        <option value="pixeles">píxeles mejorados (HD)</option>
+                    </select>
+                    <br>
+                    <label for="año">año mínimo lanzamiento original</label>
+                    <input type="number" id="año" name="año" min="1970" max="2005" value="1985">
+                    <br>
+
+                    <label for="generos">Géneros clásicos Indispensables</label>
+                    <select id="generos" name="generos">
+                        <option value="plataformas">Plataformas 2D</option>
+                        <option value="shoot_em_up">Shoot</option>
+                        <option value="rpg_clasico">RPG por Turnos Clásico</option>
+                        <option value="contra">Yo contra todos</option>
+                        <option value="aventura_point">Aventura</option>
+                    </select>
+                    <br>
+
+                </fieldset>
+                <!-- Requisito 12: Formulario  -->
+                <fieldset>
+                    <legend>Características Indispensables</legend>
+                    <label for="opinion">¿Qué no debe faltar en un buen Remake, según tú?</label>
+                    <br>
+                    <textarea id="opinion" name="opinion" rows="5" cols="50"
+                        placeholder="Ej: La banda sonora original, la dificultad exacta, la jugabilidad fiel, etc."></textarea>
+
+                    <br>
+
+                    <input type="checkbox" id="jugar" name="jugar" value="si" required>
+                    <label for="jugar">Confirmo que prefiero el juego original antes que un mal remake.</label>
+                    <br>
+
+                    <input type="checkbox" id="juegos" name="juegos" value="si">
+                    <label for="juegos">Quiero recibir noticias sobre parches de juegos retro.</label>
+                    <br>
+
+                </fieldset>
+
+                <button type="submit">Enviar </button>
+                <button type="reset">Limpiar </button>
+            </form>
+        </section>
+            <br>
+            <hr>
+     <!-- Requisito 14: Pie de página con correo -->
+        <footer>
+            <p>Esta página está hecha por: <b>Damián Ponte Mosqueira</b></p>
+            <p>Contacto:<a href="mailto:damianponte@hotmail.es"> Damianponte@hotmail.es</a></p>
+            <br>
+            <br>
+            <a href="#home">Volver al inicio</a>
+
+        </footer>
+    </body>
+   
+
+
+</html>

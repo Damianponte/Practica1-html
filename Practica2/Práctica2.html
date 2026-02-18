@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <!-- Requisito 10: uso de favicon-->
+       <link rel="stylesheet" href="practica.css">
+      <link rel="icon" href="complementos/DP.png" type="image/x-icon">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>El Baúl de los Videojuegos</title>
+    </head>
+
+    <body>
+      <!-- Requisito 1: Uso de elementos estructurales -->
+      <header>
+        <h1 id="home">El Baúl de los videojuegos</h1>
+      </header>
+      <!-- Requisito 8: Índice / menú de navegación -->
+      <nav>
+        <!-- Requisito 5: Lista anidada -->
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#clasicos">Videojuegos Clásicos</a>
+            <ul>
+              <li><a href="#tabla">tabla de Juegos Retro</a>
+                <ul>
+                  <!-- Requisito 7: Enlace a otra página creada -->
+                  <li><a href="pagina2.html">Contenido del baúl</a></li>
+                </ul>
+
+              </li>
+
+            </ul>
+          </li>
+          <li><a href="#curiosidades">Curiosidades</a></li>
+
+        </ul>
+      </nav>
+      <hr>
+
+      <!-- Requisito 1: Uso de sección principal -->
+      <section id="inicio">
+        <h2>Portada</h2>
+        <p>Esta página web está dedicada a los amantes de los videojuegos clásicos. Aquí podrás revivir aquellos títulos que
+          nos regalaron interminables horas de diversión, así como las consolas de las que formaron parte. Entre los
+          videojuegos retro más emblemáticos destacan los lanzados en las décadas de los 80, 90 y principios de los 2000,
+          para plataformas míticas como <cite>Atari 2600, Nintendo Entertainment System o Commodore 64</cite>.</p>
+        <p>En este espacio nos centraremos en algunas de las sagas más icónicas que marcaron la historia de los videojuegos,
+          como <i>Suikoden, Dragon Ball, Final Fantasy o The Legend of Zelda</i>, títulos que definieron generaciones y
+          dejaron una huella imborrable en la cultura gamer.</p>
+        <p>Pero antes de sumergirnos en estas aventuras, echemos un vistazo a algunos de los mejores juegos a lo largo de
+          los años, aquellos que sentaron las bases de la industria y se convirtieron en verdaderos clásicos.</p>
+        <a href="#home">Volver al inicio</a> <!-- Requisito 9: Enlace al índice -->
+      </section>
+      <hr>
+      <section id="clasicos">
+        <h2>Videojuegos Clásicos</h2>
+
+        <p> En esta sección encontrarás algunos de los videojuegos más icónicos de la historia, organizados por año, década
+          y plataforma.</p>
+        <p> Desde los años 70 hasta los años 90 que dejaron huella en la cultura de los videojuegos. </p>
+
+        <h3 id="tabla">Tabla de Juegos retro</h3>
+        <!-- Requisito 2: Tabla solo con texto usando rowspan -->
+        <table border="1">
+          <caption>Tabla videojuegos retro</caption>
+          <thead>
+            <tr>
+              <th scope="col">Juego</th>
+              <th scope="col">Año</th>
+              <th scope="col">Década</th>
+              <th scope="col">Plataforma</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pong</td>
+              <td>1972</td>
+              <td rowspan="2">1970</td>
+              <td rowspan="2">Atari</td>
+            </tr>
+            <tr>
+              <td>Breakout</td>
+              <td>1976</td>
+            </tr>
+            <tr>
+              <td>Hockey</td>
+              <td rowspan="2">1976</td>
+              <td rowspan="2">1970</td>
+              <td rowspan="2">Fairchild Channel F</td>
+            </tr>
+            <tr>
+              <td>Tennis</td>
+            </tr>
+            <tr>
+              <td>Super Mario Bros</td>
+              <td>1985</td>
+              <td rowspan="3">1980</td>
+              <td rowspan="3">NES</td>
+            </tr>
+            <tr>
+              <td>Legend of Zelda</td>
+              <td>1986</td>
+            </tr>
+            <tr>
+              <td>Final Fantasy I</td>
+              <td>1987</td>
+            </tr>
+            <tr>
+              <td>Suikoden</td>
+              <td>1995</td>
+              <td rowspan="2">1990</td>
+              <td rowspan="2">PlayStation</td>
+            </tr>
+            <tr>
+              <td>Final Fantasy 7</td>
+              <td>1997</td>
+            </tr>
+            <tr>
+              <td>Alex Kidd in Miracle World</td>
+              <td>1987</td>
+              <td rowspan="2">1980</td>
+              <td rowspan="2">Sega Master System</td>
+            </tr>
+            <tr>
+              <td>Sonic</td>
+              <td>1987</td>
+            </tr>
+            <tr>
+              <td>Super Mario 64</td>
+              <td>1997</td>
+              <td rowspan="3">1990</td>
+              <td rowspan="3">Nintendo 64</td>
+            </tr>
+            <tr>
+              <td>Legend of Zelda Ocarina of Time</td>
+              <td>1998</td>
+            </tr>
+            <tr>
+              <td>Donkey Kong 64</td>
+              <td>1999</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Requisito 13: Uso de aside -->
+        <aside>
+
+          <h3>Explora más juegos retro</h3>
+          <p>Si quieres saber más sobre estos juegos retro y leer nuestro blog, pulsa en el enlace de abajo para visita la
+            segunda página.</p>
+          <a href="pagina2.html">Expansión de Juegos</a>
+        </aside>
+
+        <br>
+        <a href="#home">Volver al inicio</a> <!-- Requisito 9 -->
+      </section>
+
+      <hr>
+
+      <section id="curiosidades">
+
+        <h2>Curiosidades</h2>
+        <p>Aquí encontrarás curiosidades sobre algunos de los videojuegos más icónicos:</p>
+        <!-- Requisito 4: Lista con enlaces externos -->
+        <ul>
+          <li><a href="https://zelda.fandom.com/es/wiki/The_Legend_of_Zelda:_Ocarina_of_Time" target="_blank">Legend of
+              Zelda:Ocarina of Time</a>
+            <ol>
+              <li>Fue el primer Zelda en 3D.</li>
+              <li>Introdujo el viaje en el tiempo como mecánica central.</li>
+              <li>La ocarina se usa para tocar canciones que cambian el mundo.</li>
+            </ol>
+          </li>
+          <li><a href="https://www.nintendo.com/es-es/Juegos/Nintendo-64/Super-Mario-64-269745.html" target="_blank">Super
+              Mario 64</a>
+            <ol>
+              <li>Originalmente Mario se llamaba "Jumpan".</li>
+              <li>El nivel 1-1 está diseñado como tutorial implícito.</li>
+              <li>El color de los bloques fue pensado para diferenciar plataformas del fondo.</li>
+            </ol>
+          </li>
+          <li><a
+              href="https://www.nintenderos.com/2024/12/suikoden-i-ii-hd-remaster-muestra-su-opening-oficial-en-este-video/"
+              target="_blank">Saga Suikoden</a>
+            <ol>
+              <li><i>La presencia de los 108 guerreros estelares</i> conocidos como: <b>Estrellas del Destino</b> está
+                basado en una de las novelas clásicas chinas llamada <i>Shui Hu Zhuan (Water Margin).</i></li>
+              <li>Algunas melodías de batalla son reutilizadas y reinterpretadas en juegos posteriores,creando un hilo
+                musical entre varios títulos.</li>
+              <li>En todos los juegos de la saga, tus decisiones afectan a los finales,pudiendo haber finales distintos y
+                aumentando la rejugabilidad.</li>
+            </ol>
+          </li>
+          <li><a href="https://www.fandejuegos.com/juegos/sonic" target="_blank">Sonic Hedgehog</a>
+            <ol>
+              <li>Fue diseñado para ser rápido y atractivo a los jugadores jóvenes.</li>
+              <li>Los anillos eran Originalmente vidas, pero luego se convirtieron en un sistema de protección.</li>
+              <li>El diseño de Green Hill Zone se inspiró en palmeras reales.</li>
+            </ol>
+          </li>
+          <li><a href="https://ffvii.square-enix-games.com/en-us" target="_blank">Final Fantasy VII</a>
+            <ol>
+              <li>Originalmente iba a salir para <b>Nintendo 64</b> pero se descartó porque la cantidad de datos era
+                demasiado grande para los cartuchos.</li>
+              <li>El tema <i> One-Winged Angel</i> de Sephiroth de la batalla final, fue inspirado por la canción <i>Purple
+                  Haze</i> de Jimi Hendrix</li>
+              <li>
+                <details>
+                  <summary>Spoilers!!</summary>La muerte de Aeris (Aeris Gainsborough) es uno de los momentos más
+                  recordados. Parte de su dramatismo vino de la propia experiencia de Hironobu Sakaguchi (creador de Final
+                  Fantasy VII): perdió a su madre durante el desarrollo, lo que influenció cómo tratar el tema de la muerte.
+                </details>
+              </li>
+            </ol>
+          </li>
+        </ul>
+        <!-- Requisito 16: Cita -->
+        <blockquote>«Los clásicos no mueren, viven en cada jugador que vuelve a encenderlos».</blockquote>
+        <p> Aquí tienes un pequeño viaje al pasado: disfrútalo.</p>
+
+        <br>
+
+        <!-- Requisito 15: iframe -->
+        <iframe src="https://retrogames.games/embed/sonic-knuckles-sonic-the-hedgehog-3-world" width="600" height="300"
+          scrolling="none" frameborder="0" title="Sonic & Knuckles + Sonic the Hedgehog 3 (World)"></iframe>
+        <br>
+        <a href="#home">Volver al inicio</a><!-- Requisito 9 -->
+      </section>
+      <hr>
+      <!-- Requisito 14: Pie de página con correo -->
+      <footer>
+        <p>Esta página está hecha por: <b>Damián Ponte Mosqueira</b></p>
+        <p>Contacto:<a href="mailto:damianponte@hotmail.es"> Damianponte@hotmail.es</a></p>
+        <br>
+        <br>
+        <a href="#home">Volver al inicio</a><!-- Requisito 9 -->
+
+      </footer>
+    </body>
+    
+
+</html>
